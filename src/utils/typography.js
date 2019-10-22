@@ -5,12 +5,12 @@ import 'normalize.css'
 const typography = new Typography({
   googleFonts: [
     {
-      name: 'Libre Baskerville',
-      styles: ['400'],
+      name: 'Roboto',
+      styles: ['400', '500', '700'],
     },
   ],
-  headerFontFamily: ['Avenir', 'Helvetica', 'Arial', 'sans-serif'],
-  bodyFontFamily: ['Libre Baskerville', 'serif'],
+  headerFontFamily: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
 })
 
 export default typography

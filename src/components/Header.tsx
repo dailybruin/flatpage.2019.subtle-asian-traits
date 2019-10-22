@@ -1,30 +1,29 @@
 import React from 'react';
+import fb from "../images/header.svg";
+import colors from "../utils/colors";
+import Title from './Title';
 
 type HeaderProps = {
-    imageURL: string;
     title: string;
-    author: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ imageURL, title, author }) => {
+const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
         <header style={{
             width: "100vw",
-            height: "100vh",
-            backgroundImage: `linear-gradient(transparent, transparent, #010000), url(${imageURL})`,
-            backgroundSize: "cover",
+            backgroundColor: `${colors.bg}`,
             backgroundPosition: "center",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-end",
-            color: "white",
-            fontFamily: "Avenir, Helvetica, Arial, sans-serif"
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "2em 3em"
         }}>
             <div style={{
-                padding: "2em"
+
             }}>
-                <h1>{title}</h1>
-                <h2>By: {author}</h2>
+                <img alt="Image emulating Facebook Newsfeed with Daily Bruin logo on top right" src={fb} />
+                <Title title={title} />
             </div>
         </header>
     );

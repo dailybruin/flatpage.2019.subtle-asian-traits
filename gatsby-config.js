@@ -3,7 +3,7 @@ const description = 'SITE_DESCRIPTION';
 const image = 'http://dailybruin.com/images/2017/03/db-logo.png';
 const year = '2019';
 
-const url = `https://features.dailybruin.com/${year}/subtle-asian-traits}`;
+const url = `https://features.dailybruin.com/${year}/subtle-asian-traits`;
 
 module.exports = {
   siteMetadata: {

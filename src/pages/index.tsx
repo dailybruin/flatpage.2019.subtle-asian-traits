@@ -24,6 +24,7 @@ export const query = graphql`
     kerckhoffArticle {
       headline
       author
+      blurb
       coverImg
       coverAlt
       coverCredit
@@ -47,18 +48,27 @@ const IndexPage = ({ data }) => (
       <div style={{
         backgroundColor: "white",
         border: `1px solid ${colors.gray.medium}`,
-        margin: "2em 0px"
+        margin: "2em 1em",
       }}>
         <h2 style={{
           fontWeight: "bold",
           color: `${colors.blue.dark}`,
           paddingLeft: "1rem",
           paddingTop: "2rem"
-        }}>{data.kerckhoffArticle.headline}</h2>
+        }}>{data.kerckhoffArticle.blurb}</h2>
         <p style={{
           color: `${colors.gray.dark}`,
           paddingLeft: "1rem"
         }}>By {data.kerckhoffArticle.author}</p>
+        <figure style={{
+          maxWidth: "700px",
+          textAlign: "right"
+        }}>
+          <img width="100%" src={data.kerckhoffArticle.coverImg} alt={data.kerckhoffArticle.coverAlt} />
+          <figcaption style={{
+            paddingRight: "0.5em"
+          }}>{data.kerckhoffArticle.coverCredit}</figcaption>
+        </figure>
         <Article content={data.kerckhoffArticle.content} />
       </div>
       <Footer developers="Dustin Newman" designers="Lauren Ho" year={2019} />

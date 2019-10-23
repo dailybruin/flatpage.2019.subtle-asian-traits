@@ -12,18 +12,20 @@ const Title: React.FC<TitleProps> = ({ title }) => {
             backgroundColor: "white",
             borderRadius: "20px",
             width: "100%",
-            display: "flex"
+            display: "flex",
+            alignItems: "center"
         }}>
             <h1 style={{
-                padding: "1em",
-                flexGrow: "20"
+                margin: "1em",
+                flexGrow: 20,
+                fontSize: "3em",
             }}>{title}</h1>
             <div style={{
                 backgroundColor: `${colors.gray.light}`,
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
-                borderRadius: "0px 20px 20px 0px"
+                alignSelf: "stretch",
+                borderRadius: "0px 20px 20px 0px",
             }}>
                 <img style={{
                     margin: "0px"

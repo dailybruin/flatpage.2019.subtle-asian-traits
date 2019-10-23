@@ -1,6 +1,6 @@
 const siteName = 'Subtle Asian Traits | Daily Bruin';
 const description = 'SITE_DESCRIPTION';
-const image = 'http://dailybruin.com/images/2017/03/db-logo.png';
+const image = 'https://assets.dailybruin.com/images/flatpage.2019.subtle-asian-traits/illo-5bd9c2eb93f6d5f92a6dbf296ebcfc6c.jpg';
 const year = '2019';
 
 const url = `https://features.dailybruin.com/${year}/subtle-asian-traits`;

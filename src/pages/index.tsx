@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import {
   Article,
   CoverPhoto,
+  PullQuote,
   Head,
   XPosition,
   YPosition,
@@ -10,6 +11,8 @@ import {
 import Header from '../components/Header';
 import colors from '../utils/colors';
 import Footer from "../components/Footer";
+import CustomSubheading from '../components/CustomSubheading'
+import CustomVideo from '../components/CustomVideo'
 
 export const query = graphql`
   query {
@@ -69,7 +72,7 @@ const IndexPage = ({ data }) => (
             paddingRight: "0.5em"
           }}>{data.kerckhoffArticle.coverCredit}</figcaption>
         </figure>
-        <Article content={data.kerckhoffArticle.content} />
+        <Article content={data.kerckhoffArticle.content} customTypeComponentMapping={{"video": CustomVideo, "pullquote": PullQuote, "subheading": CustomSubheading}}/>
       </div>
       <Footer developers="Dustin Newman" designers="Lauren Ho" year={2019} />
     </div>

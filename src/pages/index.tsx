@@ -2,11 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import {
   Article,
-  CoverPhoto,
-  PullQuote,
-  Head,
-  XPosition,
-  YPosition,
+  Head
 } from '@dailybruin/lux'
 import Header from '../components/Header';
 import colors from '../utils/colors';

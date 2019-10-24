@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Video } from '@dailybruin/lux';
+import ReactPlayer from 'react-player'
 
 export interface VideoProps {
   /** The id of the YouTube video. */
@@ -7,11 +7,9 @@ export interface VideoProps {
 }
 
 export default function CustomVideo(props: VideoProps) {
-  console.log("Video " + props.videoId)
   return <div style={{
     margin: "0px 0px 25px 0px",
   }}>
-    <Video videoId={props.videoId} />
+    <ReactPlayer width="100%" url={`https://youtube.com/watch?v=${props.videoId}`} />
   </div>
-
 }

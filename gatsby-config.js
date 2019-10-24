@@ -1,5 +1,5 @@
 const siteName = 'Subtle Asian Traits | Daily Bruin';
-const description = 'SITE_DESCRIPTION';
+const description = 'The Facebook group Subtle Asian Traits amasses thousands of memes and posts about Asian culture, providing a hub for its 1.5 million members to relate over a shared identity.';
 const image = 'https://assets.dailybruin.com/images/flatpage.2019.subtle-asian-traits/illo-5bd9c2eb93f6d5f92a6dbf296ebcfc6c.jpg';
 const year = '2019';
 
@@ -13,18 +13,6 @@ module.exports = {
     image,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: siteName,
-        short_name: siteName,
-        start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
-        display: 'browser',
-        icon: 'src/images/db-logo.png',
-      },
-    },
     'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',

@@ -8310,13 +8310,21 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-player@^1.13.0:
+react-player@1.13.0:
   version "1.13.0"
   resolved "https://registry.yarnpkg.com/react-player/-/react-player-1.13.0.tgz#074c19195aadd413eb1243e953f6562c7e04b911"
   integrity sha512-3Ti5ncYCPZ/Xqtm2KH+FadQtTZXwOguKypjYxYvu2EmYRECCoXutbC/He2Z7uBrb/7tzNEvqoHfZLj/1RPNTKg==
   dependencies:
     deepmerge "^4.0.0"
     load-script "^1.0.0"
+    prop-types "^15.7.2"
+
+react-plyr@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-plyr/-/react-plyr-2.2.0.tgz#94b0b2f815411d1af65de9694059eaab8a726c75"
+  integrity sha512-05oBKvCC9F2VMP7BNhh3x7xeK6PNUMYBPPWIip5sDRuey4HmpghfLQyOfsbNKTssR6kkxRSi2X9neYmfr91NuA==
+  dependencies:
+    plyr "^3.5.2"
     prop-types "^15.7.2"
 
 react-plyr@^2.1.1:
@@ -8326,14 +8334,6 @@ react-plyr@^2.1.1:
   dependencies:
     plyr "^3.3.21"
     prop-types "^15.6.2"
-
-react-plyr@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/react-plyr/-/react-plyr-2.2.0.tgz#94b0b2f815411d1af65de9694059eaab8a726c75"
-  integrity sha512-05oBKvCC9F2VMP7BNhh3x7xeK6PNUMYBPPWIip5sDRuey4HmpghfLQyOfsbNKTssR6kkxRSi2X9neYmfr91NuA==
-  dependencies:
-    plyr "^3.5.2"
-    prop-types "^15.7.2"
 
 react-side-effect@^1.1.0:
   version "1.1.5"
@@ -8348,7 +8348,7 @@ react-typography@0.16.18:
   resolved "https://registry.yarnpkg.com/react-typography/-/react-typography-0.16.18.tgz#89341b63d615f1dfcf5e471797df5acce5bde1f3"
   integrity sha512-BFkw59H2mkYRLLtHOT2UZve/9/RticAvL7o7rheOo/+tlwQyfF61wF2XzGRcA3IWASg+DbXnNViyywHBFlNj6A==
 
-react-video@^1.5.3:
+react-video@1.5.3:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/react-video/-/react-video-1.5.3.tgz#8b0197f85d235b435c7fceb5259b8ad748b91116"
   integrity sha1-iwGX+F0jW0Ncf861JZuK10i5ERY=

@@ -33,7 +33,7 @@
     "react": "16.7.0",
     "react-dom": "16.7.0",
     "react-emotion": "9.2.12",
-    "react-helmet": "5.2.0",
+    "react-helmet": "6.1.0",
     "react-player": "^1.13.0",
     "react-plyr": "^2.2.0",
     "react-typography": "0.16.18",
